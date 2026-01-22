@@ -1,0 +1,326 @@
+matches:
+  # ========================================
+  # 注释的数学专业命令
+  # ========================================
+  # Math professional
+  # - trigger: "hms"
+  #   replace: "\\sum_{n=1}^\\infty\\frac{1}{n}"
+
+  # - trigger: "lmx"
+  #   replace: "\\lim_{x\\to\\infty}"
+  
+  # - trigger: "lmn"
+  #   replace: "\\lim_{n\\to\\infty}"
+
+  # - trigger: "xps"
+  #   replace: "\\sum_{n=0}^{\\infty} a_nx^n"
+
+  # - trigger: "//."
+  #   replace: "\\frac{$|$}{}"
+
+  # - trigger: "itdx"
+  #   replace: "\\int$|$~\\mathrm{d}x"
+
+  # - trigger: "=txt"
+  #   replace: "\\xlongequal{$|$}"
+
+  # - trigger: "\\op"
+  #   replace: "\\operatorname{$|$}"
+
+  # - trigger: "\\et"
+  #   replace: "\\exists"
+
+  # - trigger: "||"
+  #   replace: "\\left\\vert{$|$}\\right\\vert"
+
+  # - trigger: "\\|"
+  #   replace: "\\left\\Vert{$|$}\\right\\Vert"
+  
+  # - trigger: "|="
+  #   replace: "\\vDash"
+
+  # - trigger: "\\OPT"
+  #   replace: "\\mathrm{OPT}"
+
+  # - trigger: "\\ranges"
+  #   replace: "\\mathsf{ranges}"
+
+  # - trigger: "\\score"
+  #   replace: "\\mathsf{score}"
+
+  # - trigger: "\\sub"
+  #   replace: "\\mathsf{sub}"
+
+  # - trigger: "\\seq"
+  #   replace: "\\left\\langle $|$ \\right\\rangle"
+
+  # - trigger: "\\indic"
+  #   replace: "\\left[ $|$ \\right]"
+
+  # ========================================
+  # 括号和分隔符
+  # ========================================
+  - trigger: "\\("
+    replace: "\\left($|$\\right)"
+
+  - trigger: "\\["
+    replace: "\\left[$|$\\right]"
+
+  - trigger: "<>"
+    replace: "\\left\\langle{$|$}\\right\\rangle"
+
+  - trigger: "\\set"
+    replace: "\\left\\{ $|$ \\right\\}"
+
+  - trigger: "\\floor"
+    replace: "\\left\\lfloor $|$ \\right\\rfloor"
+
+  - trigger: "\\ceil"
+    replace: "\\left\\lceil $|$ \\right\\rceil"
+
+  - trigger: "\\abs"
+    replace: "\\left| $|$ \\right|"
+
+  - trigger: "\\norm"
+    replace: "\\left\\| $|$ \\right\\|"
+
+  - trigger: "\\inprod"
+    replace: "\\left\\langle $|$ \\right\\rangle"
+
+  - trigger: "..."
+    replace: "\\cdots"
+
+  - trigger: "\\\\\\"
+    replace: "\\backslash{$|$}"
+
+  # ========================================
+  # 环境和结构
+  # ========================================
+  - trigger: "\\align"
+    replace: "\\begin{aligned}\n$|$\n\\end{aligned}"
+
+  - trigger: "\\cases"
+    replace: "\\begin{cases}\n$|$\n\\end{cases}"
+
+  # ========================================
+  # 字体样式
+  # ========================================
+  - trigger: "\\rmd"
+    replace: "\\mathrm{d}"
+
+  - trigger: "\\bs"
+    replace: "\\boldsymbol{$|$}"
+
+  - trigger: "\\bf"
+    replace: "\\mathbf{$|$}"
+
+  - trigger: "\\cal"
+    replace: "\\mathcal{$|$}"
+
+  - trigger: "\\rm"
+    replace: "\\mathrm{$|$}"
+
+  - trigger: "\\tt"
+    replace: "\\mathtt{$|$}"
+
+  - trigger: "\\sf"
+    replace: "\\mathsf{$|$}"
+
+  - trigger: "\\scr"
+    replace: "\\mathscr{$|$}"
+
+  - trigger: "\\bb"
+    replace: "\\mathbb{$|$}"
+
+  - trigger: "\\frak"
+    replace: "\\mathfrak{$|$}"
+
+  # ========================================
+  # 颜色
+  # ========================================
+  - trigger: "\\red"
+    replace: "\\textcolor{red}{$|$}"
+
+  - trigger: "\\blue"
+    replace: "\\textcolor{blue}{$|$}"
+
+  - trigger: "\\yellow"
+    replace: "\\textcolor{yellow}{$|$}"
+
+  # ========================================
+  # 数学字体符号（集合符号）
+  # ========================================
+  - trigger: "\\R"
+    replace: "\\mathbb{R}"
+
+  - trigger: "\\C"
+    replace: "\\mathbb{C}"
+
+  - trigger: "\\N"
+    replace: "\\mathbb{N}"
+
+  - trigger: "\\Q"
+    replace: "\\mathbb{Q}"
+  
+  - trigger: "\\Z"
+    replace: "\\mathbb{Z}"
+
+  - trigger: "\\bbP"
+    replace: "\\mathbb{P}"
+
+  # ========================================
+  # 逻辑符号
+  # ========================================
+  - trigger: "\\fa"
+    replace: "\\forall"
+
+  # ========================================
+  # 关系符号和箭头
+  # ========================================
+  - trigger: "\\sub"
+    replace: "\\subseteq"
+
+  - trigger: "->"
+    replace: "\\rightarrow"
+
+  - trigger: "=>"
+    replace: "\\Rightarrow"
+
+  - trigger: "<-"
+    replace: "\\leftarrow"
+  
+  - trigger: "<="
+    replace: "\\Leftarrow"
+
+  # ========================================
+  # 修饰符号
+  # ========================================
+  - trigger: "\\tilde"
+    replace: "\\widetilde{$|$}"
+
+  - trigger: "\\bar"
+    replace: "\\overline{$|$}"
+  
+  - trigger: "\\hat"
+    replace: "\\widehat{$|$}"
+
+  # ========================================
+  # 运算符
+  # ========================================
+  - trigger: "\\frac"
+    replace: "\\frac{$|$}{}"
+  
+  - trigger: "\\binom"
+    replace: "\\binom{$|$}{}"
+
+  - trigger: "\\sum"
+    replace: "\\sum_{$|$}"
+
+  - trigger: "\\prod"
+    replace: "\\prod_{$|$}"
+
+  - trigger: "\\int"
+    replace: "\\int_{$|$}"
+
+  # ========================================
+  # 特殊函数和操作
+  # ========================================
+
+  - trigger: "\\Exp"
+    replace: "\\mathbb{E}"
+    
+  - trigger: "\\conv"
+    replace: "\\mathsf{conv}"
+
+  - trigger: "\\proj"
+    replace: "\\mathsf{proj}"
+
+  - trigger: "\\rank"
+    replace: "\\mathsf{rank}"
+  
+  - trigger: "\\span"
+    replace: "\\mathsf{span}"
+
+  - trigger: "\\cost"
+    replace: "\\mathsf{cost}"
+
+  - trigger: "\\range"
+    replace: "\\mathsf{range}"
+
+  - trigger: "\\tw"
+    replace: "\\mathsf{tw}"
+
+  - trigger: "\\err"
+    replace: "\\mathsf{err}"
+
+  - trigger: "\\var"
+    replace: "\\mathsf{Var}"
+  
+  - trigger: "\\cov"
+    replace: "\\mathsf{Cov}"
+  
+  - trigger: "\\vol"
+    replace: "\\mathsf{Vol}"
+  
+  - trigger: "\\diam"
+    replace: "\\mathsf{diam}"
+
+  - trigger: "\\tr"
+    replace: "\\mathsf{tr}"
+
+  - trigger: "\\dist"
+    replace: "\\mathrm{dist}( $|$ )"
+
+  # ========================================
+  # 算法术语
+  # ========================================
+  - trigger: "\\kzC"
+    replace: "(k,z)\\text{-C}\\scriptsize\\text{LUSTERING}"
+
+  - trigger: "\\kmed"
+    replace: "k\\text{-M}\\scriptsize\\text{EDIAN}"
+
+  - trigger: "\\kmeans"
+    replace: "k\\text{-M}\\scriptsize\\text{EANS}"
+
+  - trigger: "\\kcenter"
+    replace: "k\\text{-C}\\scriptsize\\text{ENTER}"
+
+  - trigger: "\\opt"
+    replace: "\\mathsf{OPT}"
+
+  - trigger: "\\sol"
+    replace: "\\mathsf{SOL}"
+
+  - trigger: "\\VC"
+    replace: "\\mathrm{VC}"
+  
+  - trigger: "\\ddim"
+    replace: "\\mathsf{ddim}"
+
+  # ========================================
+  # 其他符号和文本
+  # ========================================
+  - trigger: "\\wrt"
+    replace: "w.r.t."
+
+  - trigger: "\\eps"
+    replace: "\\varepsilon"
+
+  - trigger: "\\poly"
+    replace: "\\mathrm{poly}"
+
+  - trigger: "\\net"
+    replace: "\\mathsf{Net}"
+
+  - trigger: "\\TODO"
+    replace: "\\textcolor{red}{\\texttt{TODO}}"
+
+  - trigger: "\\txt"
+    replace: "\\text{$|$}"
+
+  - trigger: "\\lip"
+    replace: "\\mathsf{Lip}"
+
+  - trigger: "\\hess"
+    replace: "\\mathrm{Hess}"
